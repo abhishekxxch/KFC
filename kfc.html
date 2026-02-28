@@ -20,12 +20,12 @@
 <main>
 
    <section>
-    <article>
+    <article id="about">
         <img src="https://tse1.mm.bing.net/th/id/OIP.Spg-IvlHJ5zqCX-Qzf6VyAHaDt?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="KFC Food" width="400">
         <p>At KFC, we are committed to serving our customers the best fried chicken in the world. Our secret recipe has been passed down for generations, and we take pride in using only the freshest ingredients to create our delicious meals.</p>
     </article>
     <h1>Menu</h1>
-    <article>
+    <article id="menu">
         <p>Welcome to KFC! Here is our delicious menu:</p>
         <ul>
             <li>Original Recipe Chicken</li>
@@ -39,7 +39,21 @@
     </article>
    </section>
 </main>
-
+<form id="order-form">
+    <h2>Order Form</h2> 
+    <label for="original-recipe-chicken">Original Recipe Chicken:</label><input type="number" id="original-recipe-chicken" name="original-recipe-chicken" min="0" max="10"><br><br>
+    <label for="extra-crispy-chicken">Extra Crispy Chicken:</label><input type="number" id="extra-crispy-chicken" name="extra-crispy-chicken" min="0" max="10"><br><br>
+    <label for="kfc-bucket">KFC Bucket:</label><input type="number" id="kfc-bucket" name="kfc-bucket" min="0" max="10"><br><br>
+    <label for="chicken-tenders">Chicken Tenders:</label><input type="number" id="chicken-tenders" name="chicken-tenders" min="0" max="10"><br><br>
+    <label for="slides_and_add_ons">Add Sides and Add-Ons</label><br><br>
+    <input type="checkbox" id="slides_and_add_ons" name="slides_and_add_ons">cheese fries<br><br>   
+    <input type="checkbox" id="slides_and_add_ons" name="slides_and_add_ons">coleslaw<br><br>
+    <input type="checkbox" id="slides_and_add_ons" name="slides_and_add_ons">mashed potatoes with gravy<br><br>
+    <input type="checkbox" id="slides_and_add_ons" name="slides_and_add_ons">biscuits<br><br>
+    <input type="checkbox" id="slides_and_add_ons" name="slides_and_add_ons">corn on the cob<br><br>
+    <label for="special-instructions">Special Instructions:</label><br>
+    <textarea id="special-instructions" name="special-instructions" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="GO TO CHECKOUT">
     <footer>
         <p>&copy; MADE WITH LOVE BY ABHISHEK</p>
     </footer>
